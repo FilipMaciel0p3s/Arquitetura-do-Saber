@@ -178,7 +178,7 @@ footer.social{
 }
 
 .button {
-  background-color: var(--base-color);
+  background-color: var(--footer-color);
   color: var(--body-color);
   height: 3.5rem;
   display: inline-flex;
@@ -189,8 +189,8 @@ footer.social{
   transition: background 0.3s;
 }
 .button:hover {
-  background: var(--base-color-alt);
-  color: var(--base-color);
+  background: var(--body-color);
+  color: var(--text-color);
 }
 
 .divider-1 {
@@ -260,8 +260,12 @@ main {
 
 #home {
   overflow: hidden;
-  
+  background: url("/Imagens/LivroDir.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
+
 
 #home .container {
   margin: 0;
@@ -304,10 +308,13 @@ main {
 
 #home .text p {
   margin-bottom: 2rem;
+  color: #005870;
+  font-style: var(--title-font);
+  font-size: var(--title-font-size);
 }
 
 #about {
-  background: white;
+  background: #E8F1F2;
 }
 
 #about .container {
@@ -371,19 +378,23 @@ main {
 }
 
 .cards.grid {
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .card {
+  position: relative;
+  left: 50%;
   padding: 3.625rem 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-bottom: 0.25rem solid var(--base-color);
+  border-bottom: solid var(--base-color);
+  background-color: var(--body-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
 }
 
 .card i {
   display: block;
+  left: 200px;
   margin-bottom: 1.5rem;
   font-size: 5rem;
   color: var(--base-color);
@@ -511,6 +522,10 @@ main {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
+}
+
+#services{
+  background-color: #C8ECF5;
 }
 :root{
   --header-height:  4.5rem;
